@@ -24,7 +24,6 @@ function ajaxCall() {
 
 function locationInfo() {
     var rootUrl = "https://geodata.solutions/api/api.php";
-    //now check for set values
     var addParams = '';
     if(jQuery("#gds_appid").length > 0) {
         addParams += '&appid=' + jQuery("#gds_appid").val();
@@ -127,7 +126,6 @@ function locationInfo() {
     };
 
     this.getCountries = function() {
-        //get additional fields
         var countryClasses = jQuery('#countryId').attr('class');
 
         var cC = countryClasses.split(" ");
